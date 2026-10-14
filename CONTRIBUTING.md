@@ -8,16 +8,10 @@ Follow the repository's README for setup and checks. Follow its language, strict
 
 ## Versions
 
-Every repository names its versions after its commits, as `YY.MM.DD.#N`: the
-last two digits of the year, the month and the day of the commit (in the time
-zone it was made in), then `#` and the commit's count among that day's commits,
-starting at 1. `26.10.11.#1` is the first commit made on October 11, 2026.
-Versions are read from the Git history, so nobody sets them by hand.
-`package.json` can't hold this form, so its `version` field is not the
-repository's version.
-
-Long-term support releases are named `YY.MM.DD LTS`, such as `26.10.11 LTS`,
-and tagged `YY.MM.DD-LTS` in Git, because tag names can't contain spaces.
+Versions follow FOSS Earth's rule, written once in its
+[CONTRIBUTING](https://github.com/foss-earth/.github/blob/main/CONTRIBUTING.md#versions)
+and computed by FOSS Earth [About](https://github.com/foss-earth/about) for
+every app and site, including this organization's.
 
 ## Rights and licensing
 
