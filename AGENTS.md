@@ -43,12 +43,24 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
 - **Paragraph grouping:** each logical component in a paragraph grid has its
   own compact rounded rectangle by default, including collapsed component
   overrides. Keep a choice's segments together inside one track within its group.
+  Show what a part holds by nesting its parts' rounded rectangles inside its
+  own, as matryoshka dolls hold each other, never by indentation
+  ([rule](https://github.com/foss-earth/docs/blob/main/docs/ui-layout.md#nested-rectangles-show-what-holds-what)).
+  An item's thumbnail, name and actions share one visible enclosure; a paragraph
+  grid alone is not a boundary. Reuse its existing gallery card for its actions
+  instead of repeating its identity in another summary.
   Expanded component/group titles are the first naturally sized item in the
   same wrapping paragraph grid as their controls, not a separate header row.
   Full section headings are the exception and can occupy their own row.
   Paragraph grids with expandable items show expanded items first, then
   minimized items, using an order override that preserves relative order
   within each group and retains focus/control state.
+- **Card actions:** when an item card has one primary action, make the whole
+  card its native button/link target, including its image, title, status,
+  padding and compact action label. A selected/current item stays actionable:
+  open its settings/editor when available. Selection alone never disables it.
+  Keep the label inside that same control; never nest interactive controls.
+  Preserve separate controls for genuinely distinct secondary actions.
 - **Compact controls:** arrange content as compactly as practical, using natural
   widths and wrapping paragraph grids where useful. Discrete choices use one
   rounded segmented slider with short text buttons (digits for counts: 1
