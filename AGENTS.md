@@ -58,6 +58,15 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   recognizable icons over verbose action text, with accessible names. Reuse the
   shared UI factory and follow the full [control design
   spec](https://github.com/foss-earth/docs/blob/main/docs/ui-layout.md#compact-segmented-choices).
+- **Light testing on the laptop:** the maintainer works on a fanless Apple M5
+  laptop. Keep automated testing as short as the decision allows: one quick
+  configuration first, then stop once the result is clear. Don't start browser
+  or benchmark sessions that run longer than a few minutes; defer them. If a
+  long run is really necessary, write a handoff doc for a cloud agent instead,
+  with exact commands, expected duration and what to compare. On a VM without a
+  GPU, compare only paired differences, not absolute frame times. Say what the
+  maintainer can test by hand. Prefer the work that ships the most measured
+  improvement per hour.
 - **Stranded Chrome clones:** a run of the installed Google Chrome that is
   killed instead of closed leaves a copy of the app, about 2 GB by `du`, under
   `/private/var/folders`. After a Chrome run you stopped, that timed out or that
