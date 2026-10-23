@@ -10,3 +10,7 @@ Each repository's AGENTS.md points here. Versions are named `YY.MM.DD#N` from th
 - [Contributing](https://github.com/0SFS/.github/blob/main/CONTRIBUTING.md)
 - [License](LICENSE)
 - [Security](https://github.com/0SFS/.github/blob/main/SECURITY.md)
+
+[Agent entry point](AGENTS.md) · [Task-specific guidance](agent-reference.md) ·
+[Cross-organization repository map](https://github.com/foss-earth/docs/blob/main/docs/agent-start.md) ·
+[Custom test links and feedback](https://github.com/foss-earth/docs/blob/main/docs/test-feedback.md)
