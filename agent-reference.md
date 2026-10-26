@@ -76,8 +76,11 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
 - **Promotional artwork credits:** put provider/model attribution, creator names,
   licence links, provenance and modification notices behind the card's compact
   **?**, at the bottom right. Preserve the complete credits and working links
-  inside accessible help. Apply this when adding artwork without waiting for a
-  separate request; handoff documents must follow the same rule instead of
+  inside a compact tooltip anchored beside its button, never a centered popup,
+  modal or dimmed overlay. Use this anchored behavior for all **?** explanations;
+  the Popover API may supply the top layer but must not impose popup styling.
+  Apply this when adding artwork without waiting for a separate request;
+  handoff documents must follow the same rule instead of
   proposing permanent credit paragraphs on the card. Do not invent third-party
   model credits for artwork built in this project's own code; credit external
   content shown within it separately.
