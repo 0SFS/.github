@@ -67,11 +67,22 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
 ## UI
 
 - **Explanation on demand:** use a compact **?** button by default for
-  supplementary information, diagnostics and rationale, rather than a wordy
-  Details/More info action. Keep it last and available on collapsed components.
-  Keep only essential terse state, errors/fallbacks,
-  pending/apply feedback and decision-critical instructions visible by default.
-  Do not hide information needed to understand the current state or avoid mistakes.
+  supplementary information, diagnostics, variant mappings, provenance and
+  technical rationale, rather than a wordy Details/More info action.
+  The **primary surface** displays identity (name and image/thumbnail), the
+  primary action, essential terse state (such as short status tags like
+  **Experimental** that materially affect interpretation or safety), current
+  errors/fallbacks, pending/apply feedback and decision-critical instructions.
+  Do not invent new capability claims to replace hidden copy.
+  Put **behind ?**: extended descriptions, variant and package details, runtime
+  implementation mappings, technical caveats and secondary explanations so that
+  dense paragraphs do not dominate the layout. Keep the **?** control last and
+  available even on collapsed components. Help controls must have accessible
+  names (`aria-label`), respond to click/tap and keyboard (Space/Enter), dismiss
+  on Escape or outside interaction when floating, return focus cleanly, wrap
+  naturally on narrow screens, and position without clipping inside rounded cards.
+  Favor native HTML (such as the Popover API or accessible disclosure) over
+  heavyweight libraries or framework dependencies.
 
 - **Promotional artwork credits:** put provider/model attribution, creator names,
   licence links, provenance and modification notices behind the card's compact
