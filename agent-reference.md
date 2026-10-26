@@ -73,6 +73,15 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   pending/apply feedback and decision-critical instructions visible by default.
   Do not hide information needed to understand the current state or avoid mistakes.
 
+- **Promotional artwork credits:** put provider/model attribution, creator names,
+  licence links, provenance and modification notices behind the card's compact
+  **?**, at the bottom right. Preserve the complete credits and working links
+  inside accessible help. Apply this when adding artwork without waiting for a
+  separate request; handoff documents must follow the same rule instead of
+  proposing permanent credit paragraphs on the card. Do not invent third-party
+  model credits for artwork built in this project's own code; credit external
+  content shown within it separately.
+
 - **Readable control phrases:** choose label/control order by grammatical
   sense, usually `Implementation [TS / WASM] ?`. Prefix/suffix text is allowed;
   do not impose a universal slider-first or label-first order. Keep help last.
