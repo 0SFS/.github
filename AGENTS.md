@@ -4,6 +4,8 @@ Applies to every repository in this organization. Read this file, then follow
 only the task-relevant rows below. Linked guides are required for the work they
 cover; do not preload the whole documentation tree. Prefer adjacent checkouts
 (`../.github/`, `~/gh/foss-earth/docs/`); use the GitHub links when unavailable.
+Check `~/gh/0sfs/docs-priv` for developer-specific non-public docs; when it
+exists, read its AGENTS.md.
 
 - Preserve existing uncommitted work; stage explicit paths only.
 - Put scratch files, logs and screenshots in the target repo’s ignored `build/`.
@@ -26,6 +28,8 @@ cover; do not preload the whole documentation tree. Prefer adjacent checkouts
   the handoff; normal user startup includes the network link and QR code.
 - New UI belongs in the app's tabbed interface. Add a tab unless the user requests
   an existing tab; do not add top bars, floating panels or overlays unless explicitly requested.
+- 0SFS is an open-source flight simulator: create new repositories public, with
+  `gh repo create 0SFS/<name> --public`.
 - Rewrite published history or change repository settings only if asked.
 - Never add AI author, committer or co-author attribution.
 - Keep laptop checks short: one quick configuration first; stop when clear.
