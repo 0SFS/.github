@@ -13,4 +13,5 @@ Each repository's AGENTS.md points here. Versions are named `YY.MM.DD#N` from th
 
 [Agent entry point](AGENTS.md) · [Task-specific guidance](agent-reference.md) ·
 [Cross-organization repository map](https://github.com/foss-earth/docs/blob/main/docs/agent-start.md) ·
-[Custom test links and feedback](https://github.com/foss-earth/docs/blob/main/docs/test-feedback.md)
+[Custom test links and feedback](https://github.com/foss-earth/docs/blob/main/docs/test-feedback.md) ·
+[Documentation layout](https://github.com/foss-earth/docs/blob/main/docs/documentation-layout.md)

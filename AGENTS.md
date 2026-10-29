@@ -7,6 +7,9 @@ cover; do not preload the whole documentation tree. Prefer adjacent checkouts
 Check `~/gh/0sfs/docs-priv` for developer-specific non-public docs; when it
 exists, read its AGENTS.md.
 
+- Write modular, reusable code. Put a behavior in one shared module and call it. Do not copy it into a feature, a screen, or a package.
+- No vendor lock-in. Do not bind the program, its files, or its reports to one editor, one agent product, one host, or one vendor SDK when a standard interface exists.
+- Write numeric kernels in Rust/WebAssembly as twins of a TypeScript reference in the same package (`ground-contact/wasm/`, `multirotor/wasm/`; no separate `native/` tree). Use shared-memory threads where they help, and keep work off the main thread unless it has to be there. See [WebAssembly cores](https://github.com/foss-earth/docs/blob/main/docs/webassembly-cores.md).
 - Preserve existing uncommitted work; stage explicit paths only.
 - Put scratch files, logs and screenshots in the target repo’s ignored `build/`.
 - Specifications, design documents and proposals belong in the repository documentation tree (`docs/proposals/` in 0SFS/owning repos, `docs/docs/proposals/` in FOSS Earth). Never write them into tool artifact directories, `~/.gemini/`, or outside the workspace.
@@ -51,6 +54,7 @@ exists, read its AGENTS.md.
 | Deploy / publish (only when requested) | [Publishing](agent-reference.md#publishing) |
 | Commit / release / licensing | [Contributions](agent-reference.md#contributions) and [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Previous conversation supplied | [History](agent-reference.md#history) |
+| 360° drone mod, drone capture, optical flow, quadcopter phone controls, drone flight model | [SPEC-360-DRONE](../docs/proposals/SPEC-360-DRONE.md); its section 4.8 gives the frames and signs. WebGPU is the only backend for that pipeline. The drones are the declarative `0SFS/Quadcopter`, `0SFS/DJI-Quadcopter`, `0SFS/DJI-Mini2`, and `0SFS/DJI-Air-2S` mods. Runtime code loads through `droneGate.ts` only when a drone aircraft is applied. The flight model is [`multirotor/`](../multirotor/README.md). The [flight-model roadmap](../docs/proposals/360-drone-flight-model-roadmap-2026-10-28.md) has its status and open decisions. |
 
 Keep future AGENTS.md files as entry points: essential universal rules plus
 a task index. Put detailed procedures in linked guides, retain their information,
