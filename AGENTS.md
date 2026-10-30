@@ -39,7 +39,8 @@ exists, read its AGENTS.md.
   Hand off runs longer than a few minutes with commands and expected duration.
 - When a task needs hands-on feedback, also provide a custom test link and
   downloadable feedback bundle using the guide below. The link must work after
-  the user starts their own server.
+  the user starts their own server, and must be short and readable, such as
+  `https://localhost:7470/fly/test/<name>`, never a long encoded address.
 
 | When the task touches… | Read / inspect |
 | --- | --- |

@@ -66,6 +66,13 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
 
 ## UI
 
+- **Relocation consent:** never change an existing flight's world position as a
+  side effect of aircraft selection, map loading, provider changes or terrain
+  refinement. Show the proposed destination/altitude and reason with Yes/No
+  before a nonphysical relocation. Declining preserves position; never remember
+  a bypass. Keep streaming readiness separate from placement. Physical motion,
+  ordinary contact response and floating-origin rebasing are not teleports.
+
 - **Explanation on demand:** use a compact **?** button by default for
   supplementary information, diagnostics, variant mappings, provenance and
   technical rationale, rather than a wordy Details/More info action.
